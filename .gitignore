@@ -1,5 +1,8 @@
 # Visual Studio
 .vs/
+*.vcxproj.user
+bin/
+obj/
 
 # Prerequisites
 *.d
