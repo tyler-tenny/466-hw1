@@ -1,5 +1,6 @@
 #include <iostream>
-#include "Cryptanalysis.h";
+#include <limits>
+#include "Cryptanalysis.h"
 
 using namespace std;
 
@@ -7,7 +8,7 @@ int main() {
 	bool exitFlag{ false };
 
 	while (!exitFlag) {
-		cout << "Welcome! \n";
+		cout << "Welcome! \n\n";
 		cout << "Please select one of the following options: \n";
 
 		cout << "1. Encrypt plaintext with a key \n";
@@ -19,7 +20,7 @@ int main() {
 		
 		if (!(cin >> selection)) {
 			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
 			cout << "Error, please enter only a positive integer from 1 to 4.\n";
 		}
 

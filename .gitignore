@@ -1,13 +1,27 @@
 # Visual Studio
 .vs/
-*.vcxproj.user
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.filters
+
+# Build output directories
 bin/
 obj/
+out/
+x64/
+Debug/
+Release/
 
-# Prerequisites
-*.d
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.dir/
 
 # Compiled Object files
+*.d
 *.slo
 *.lo
 *.o
@@ -17,31 +31,29 @@ obj/
 *.gch
 *.pch
 
-# Linker files
+# Linker / Debugger
 *.ilk
-
-# Debugger Files
 *.pdb
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
+# Libraries
 *.lai
 *.la
 *.a
 *.lib
+*.so
+*.dylib
+*.dll
 
 # Executables
 *.exe
 *.out
 *.app
 
-# debug information files
+# Debug info
 *.dwo
+
+# Misc
+*.log
+*.recipe
+*.tlog
+*.lastbuildstate
